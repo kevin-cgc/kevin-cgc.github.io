@@ -32,13 +32,14 @@
 		//										//
 		//////////////////////////////////////////
 
-		import { World } from "./nodes.js";
+		import { World, Node } from "./nodes.js";
 
 		const mainWorld = new World(document.querySelector("#canvas"), true, document.querySelector(".nodeinfo"));
 		//const mainWorld = new World(document.querySelector("#canvas"), true);
 		mainWorld.camera.zoom = -0.5
 
 		function createCube(world) {
+            Node.SIZE = 3;
 			world.createNode([12, 50, 56.413]);
 			world.createNode([12, 60, 67.695]);
 			world.createNode([12, 70, 78.978]);
@@ -147,7 +148,9 @@
 
 		window.createCube = createCube;
 		window.createTeapot = createTeapot;
-		window.mainWorld = mainWorld;
+        window.mainWorld = mainWorld;
+
+        createCube(mainWorld);
 	</script>
 </body>
 </html>

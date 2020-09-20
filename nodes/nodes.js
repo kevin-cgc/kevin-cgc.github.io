@@ -387,9 +387,7 @@ export class Node {
 		return this.highlight ? this.highLightColor : this.color;
 	}
 
-	static get SIZE() {
-		return 1;
-	}
+	static SIZE = 1;
 	static get POLYGON() { //do these need to be better centered on coordinate?
 		/* eslint-disable no-unreachable */
 		//triangleish

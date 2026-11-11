@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Kevin John</title>
+    <style>
+        body {
+            max-width: 68ch;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            font: 1rem/1.6 ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+        }
+        dt { font-weight: bold; }
+        dd { margin: 0 0 1.5rem; }
+        a {
+            color: inherit;
+            text-underline-offset: 0.2em;
+        }
+        a:hover, a:focus-visible { text-decoration-thickness: 2px; }
+        nav, .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 1rem;
+        }
+        .links { margin-top: 0.25rem; }
+    </style>
 </head>
 <body>
-    <a href="/nodes">nodes</a>
+    <header>
+        <h1>Kevin John</h1>
+        <p>Haptics, XR, and ML.</p>
+        <nav aria-label="Profiles">
+            <a href="https://scholar.google.com/citations?user=EIyZ00YAAAAJ">Google Scholar</a>
+            <a href="https://github.com/kevin-cgc">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Projects</h2>
+        <dl>
+            <dt>AdapTics</dt>
+            <dd>
+                A toolkit for designing and playing adaptive mid-air haptics.
+                <div class="links">
+                    <a href="https://adaptivehaptics.github.io/AdapticsDesigner/">Demo</a>
+                    <a href="https://github.com/AdaptiveHaptics">Code</a>
+                </div>
+            </dd>
+
+            <dt>HapticGen</dt>
+            <dd>
+                A generative model for creating vibrations from text prompts.
+                <div class="links">
+                    <a href="https://hapticgen.hcitech.org/">Project Page</a>
+                    <a href="https://github.com/HapticGen/HapticGen">Code</a>
+                    <a href="https://github.com/HapticGen/hapticgen-dataset">Dataset</a>
+                    <a href="https://huggingface.co/HapticGen/HapticGen-Weights">Model Weights</a>
+                </div>
+            </dd>
+
+            <dt>ChatHAP</dt>
+            <dd>
+                A conversational interface for designing and editing vibrations.
+                <div class="links">
+                    <a href="https://github.com/ChatHAP/ChatHAP">Code</a>
+                </div>
+            </dd>
+
+            <dt>HapticLens</dt>
+            <dd>
+                An interactive tool for creating vibrations from motion in video.
+                <div class="links">
+                    <a href="https://github.com/HapticLens-Interactive/HapticLens">Code</a>
+                </div>
+            </dd>
+
+            <dt>HapticGlove</dt>
+            <dd>
+                Open-source hardware and firmware for a 16-point vibrotactile glove.
+                <div class="links">
+                    <a href="https://github.com/kevin-cgc/HapticGlove">Hardware &amp; Firmware</a>
+                </div>
+            </dd>
+
+            <dt>Quest haptic playback</dt>
+            <dd>
+                Haptic waveform playback on Meta Quest controllers via WebSockets.
+                <div class="links">
+                    <a href="https://github.com/kevin-cgc/questxr-happlay">Code</a>
+                </div>
+            </dd>
+        </dl>
+    </main>
 </body>
 </html>
